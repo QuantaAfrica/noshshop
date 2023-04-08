@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My App</title>
+    <link rel="stylesheet" href="style.css">
+	<!-- Add Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- Add Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	 <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+	        background-color: #221A1A;
+	        height: 100vh;
+            margin: 0;
+        }
+		.carousel-inner .item {
+			width: 428px;
+			height: 926px;
+		}
+
+		.carousel-inner .item img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.carousel-caption {
+			background: rgba(0, 0, 0, 0.5);
+			padding: 20px;
+			margin-bottom: 100px;
+		}
+		.carousel-caption h3,
+		.carousel-caption p {
+			color: #ffffff;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+		.carousel-control {
+			background-image: none;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 0;
+			width: 10px;
+			height: 50px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.carousel-indicators {
+			bottom: 0;
+		}
+		.carousel-indicators .active {
+			background-color: #ffffff;
+		}
+        .carousel-indicators {
+            width: 428px;
+			height: 20px;
+             /* width: 100%; -->
+             height: 20px; */
+            position: center;
+            bottom: 20px;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+        } -->
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+						<li data-target="#myCarousel" data-slide-to="4"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="images/splash1.jpg" alt="Splash 1">
+							<div class="carousel-caption">
+								<h3>The easiest way to order for food at  your preference</h3>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="images/splash2.jpg" alt="Splash 2">
+							<div class="carousel-caption">
+								<h3>Have your meals just the way you like it.</h3>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="images/splash3.jpg" alt="Splash 3">
+							<div class="carousel-caption">
+								<h3>Get any food recipe for free and tweak recipe just the way you want it!</h3>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="images/splash4.jpg" alt="Splash 4">
+							<div class="carousel-caption">
+								<h3>Have our food shopper go through the stress for you.</h3>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="images/splash5.jpg" alt="Splash 5">
+							<div class="carousel-caption">
+								<h3>Get started with NOSHSHOP</h3>
+							</div>
+                            <button>Get Started</button>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+                    <div class="right-left">
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
